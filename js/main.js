@@ -223,7 +223,11 @@ function Repository() {
         
         cats: {
             key: "cats",
-            defaultValue: [],
+            defaultValue: [{
+                url: "https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                name: "Cute Cat",
+                id: "cutecat101"
+            }],
             set: (value) => repository.set("cats", value),
             get: () => repository.get("cats")
         },
